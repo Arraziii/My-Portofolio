@@ -1,0 +1,325 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    position: relative;
+}
+
+.site-logo img {
+    width: 60px; /* Ukuran logo sesuai kebutuhan */
+    height: 60px; /* Ukuran sama agar tetap kotak */
+    border-radius: 10px; /* Gunakan 0 jika tidak ingin sudut melengkung */
+    border: 2px solid #fff; /* Opsional: border putih untuk memperindah */
+    object-fit: cover; /* Memastikan foto memenuhi kotak tanpa meregang */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: bayangan untuk efek modern */
+}
+
+.site-logo img:hover {
+    transform: scale(1.1); /* Memperbesar sedikit */
+    transition: transform 0.3s ease;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #fff;
+    color: #2575fc;
+    border-color: #fff;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #2575fc;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.intro button {
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.intro button:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+}
+
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #2575fc;
+    color: #fff;
+}
+
+header .site-logo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+#intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+#intro .btn {
+    display: inline-block;
+    background: #fff;
+    color: #2575fc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#intro .btn:hover {
+    background: #6a11cb;
+    color: #fff;
+}
+
+/* Portfolio Section */
+#portfolio {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-items .item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-items .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-items .item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-items .item .btn {
+    display: inline-block;
+    background: #2575fc;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.portfolio-items .item .btn:hover {
+    background: #6a11cb;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background: #2575fc;
+    color: #fff;
+    text-align: center;
+}
+
+
+#about {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#contact {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 1rem;
+    color: #eee;
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .intro button {
+        width: 100%;
+    }
+}
+
+.item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
